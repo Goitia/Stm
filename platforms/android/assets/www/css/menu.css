@@ -1,0 +1,148 @@
+#contenido{
+	background-image:url(../img/backgroud.jpg);	
+	width:100%;
+	height:100%;
+}
+#grid{
+	height:400px;
+	width:300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+}		
+#alert_btn{
+	float:right;
+	margin-right: 20px;
+	width:85px;
+	text-align:center;
+	height:85px;
+	line-height: 50px;
+	color:#000000;
+	background-image:url(../img/campana.png); 
+	background-size: 80px 80px;
+	background-position:center;
+	background-repeat: no-repeat; 
+	text-decoration: none;
+	border:hidden;
+	box-shadow:none;
+	background-color:transparent;
+}
+#alert_btn:active { 
+	background-color:#FFAB00; 
+	box-shadow: 0px 0px 10px 0px #85228E; 
+}
+#alert_btn:hover{
+	background-color: #FF0000; 	
+}
+#text{
+	text-align:center;
+	color:#FFFFFF;
+	font-weight:900;
+	font-size:22px;
+	text-shadow: 5px -2px 6px #FF0004;
+}
+
+
+
+#estadisticas_btn{
+	float:right;
+	margin-right: 20px;
+	width:85px;
+	text-align:center;
+	height:85px;
+	line-height: 50px;
+	background-image:url(../img/graphic.png); 
+	background-size: 80px 80px;
+	background-position:center;
+	background-repeat: no-repeat; 
+	text-decoration: none;
+	border:hidden;
+	box-shadow:none;
+	background-color:transparent;
+}
+#estadisticas_btn:active { 
+	background-color:#FFAB00; 
+	box-shadow: 0px 0px 10px 0px #85228E; 
+}
+#estadisticas_btn:hover{
+	background-color: #FF0000; 	
+}
+
+
+
+#mapa_btn{
+	float:right;
+	margin-right: 20px;
+	width:85px;
+	text-align:center;
+	height:85px;
+	line-height: 50px;
+	background-image:url(../img/mapa.png); 
+	background-size: 80px 80px;
+	background-position:center;
+	background-repeat: no-repeat; 
+	text-decoration: none;
+	border:hidden;
+	box-shadow:none;
+	background-color:transparent;
+}
+#mapa_btn:active { 
+	background-color:#FFAB00; 
+	box-shadow: 0px 0px 10px 0px #85228E; 
+}
+#mapa_btn:hover{
+	background-color: #FF0000; 	
+}
+
+
+#ajustes_btn{
+	float:right;
+	margin-right: 20px;
+	width:85px;
+	text-align:center;
+	height:85px;
+	line-height: 50px;
+	background-image:url(../img/ajustes.png); 
+	background-size: 80px 80px;
+	background-position:center;
+	background-repeat: no-repeat; 
+	text-decoration: none;
+	border:hidden;
+	box-shadow:none;
+	background-color:transparent;
+}
+#ajustes_btn:active { 
+	background-color:#FFAB00; 
+	box-shadow: 0px 0px 10px 0px #85228E; 
+}
+#ajustes_btn:hover{
+	background-color: #FF0000; 	
+}
+#desconectar{
+	float:right;
+	position:relative;
+	margin-right:40px;
+	border: 0px #000000 solid; 
+	border-radius:20px;
+	text-decoration: none; 
+}
+
+#desconectar:active { 
+	background-color:#FFAB00; 
+	box-shadow: 0px 0px 10px 0px #85228E; 
+}
+#desconectar:hover{
+	background-color:#FFF000; 	
+	color:#000000;
+}
+#userImg{
+	width:80px;
+}
+#user{
+	color:#FFFFFF;
+	margin-left:15px;
+	margin-top:-5px;
+	font-size:24px;
+	font-weight:900;
+}
+
