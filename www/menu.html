@@ -15,12 +15,12 @@
 
 </head> 
 <body>   
-    
-  
+
     
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/aletas.js"></script>
     
     <div data-role="page" id="home" data-theme="a">
 	<div data-role="content" id="contenido">	
@@ -29,7 +29,7 @@
 
             <div class="ui-grid-a" id="grid">
                 <div class="ui-block-a">
-                    <a href="#alertas" data-role="button" data-inline="false" id="alert_btn"></a><p id="text">Alertas</p>
+                    <a href="MenuAlertas.html" data-role="button" data-inline="false" data-ajax="false" id="alert_btn"></a><p id="text">Alertas</p>
                     <a href="#estadisticas" data-role="button" data-inline="false" id="estadisticas_btn"></a><p id="text">Estadisticas</p>
                 </div>
                 <div class="ui-block-b">
@@ -43,8 +43,7 @@
     <!--Alertas-->
     <div data-role="page" id="alertas">
         <div data-role="header">
-		<a data-role="button" data-rel="back" href="#home" data-icon="arrow-l"
-               data-iconpos="left" class="ui-btn-left">
+            <a data-role="button" data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
                 Atrás
             </a>
 	</div>
@@ -68,12 +67,20 @@
 
     <!--Crear Alertas-->
     
-    <div data-role="page" id="cerrar_Alertas">
+    <div data-role="page" id="crear_Alertas">
 	<div data-role="header">
-		<h1>Página tres</h1>
+            <a data-role="button" data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                Atrás
+            </a>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content">
+            <br>
+                Ubicación <input type="text" name="firstname">
+                <input type="button" value="Obtener Ubicación" onclick="getUbicacion();"><br>
+                Mensaje <textarea rows="5" cols="50">
+                </textarea>
+                <p id="geolocation">hola</p>
+            
 	</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
@@ -256,20 +263,20 @@
             <fieldset data-role="controlgroup">
                 <legend>Mode:</legend>
                 <input type="radio" name="radio-choice-1" id="radio-choice-1" value="DRIVING" checked="checked" />
-                <label for="radio-choice-1">Car</label>
+                <label for="radio-choice-1">Coche</label>
 
                 <input type="radio" name="radio-choice-1" id="radio-choice-2" value="BICYCLING"  />
-                <label for="radio-choice-2">Bicycle</label>
+                <label for="radio-choice-2">Bicicleta</label>
 
                 <input type="radio" name="radio-choice-1" id="radio-choice-3" value="TRANSIT"  />
-                <label for="radio-choice-3">Public transportation</label>
+                <label for="radio-choice-3">Transporte público</label>
 
                 <input type="radio" name="radio-choice-1" id="radio-choice-4" value="WALKING"  />
-                <label for="radio-choice-4">Walk</label>
+                <label for="radio-choice-4">Caminando</label>
             </fieldset>
             <input type="button" value="Find" onclick="validateDirectionFields();">
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="b"><h4>Find direction</h4></div>
+        <div data-role="footer" data-position="fixed" data-theme="b"><h4>Buscar dirección</h4></div>
     </div>
 
     <!--Page for direction map-->
@@ -281,7 +288,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 id="directionHeader">Direction</h1></div>
 
@@ -300,7 +307,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 id="dirlistHeader">Directions</h1></div>
         <div data-role="content" id="directionsResultsList">
@@ -317,7 +324,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 id="contactsHeader">Contacts</h1></div>
         <div data-role="content" id="contactsResultsList">
@@ -334,7 +341,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 id="addressesHeader">Addresses</h1></div>
         <div data-role="content" id="addressesResultsList">
@@ -342,6 +349,7 @@
         </div>
         <div data-role="footer" data-theme="b" data-position="fixed"><h4>Addresses</h4></div>
     </div>
+    
     <!--Translate selected address using Geocoder and show results-->
     <div data-dom-cache="false" data-role="page" id="showAddress">
         <div data-role="header" data-theme="b">
@@ -351,7 +359,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 id="matchingHeader">Matching Places</h1></div>
         <div data-role="content" id="matchingAddresses">
@@ -367,7 +375,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1 >About</h1></div>
         <div data-role="content" id="aboutContent">
@@ -384,7 +392,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1>Compass</h1></div>
         <div data-role="content" id="compassContent" style="text-align: center;">
@@ -402,7 +410,7 @@
             </a>
             <a data-role="button" data-rel="back" href="#page1" data-icon="arrow-l"
                data-iconpos="left" class="ui-btn-left">
-                Back
+                Atrás
             </a>
             <h1>Photos Nearby</h1></div>
         <div data-role="content" style="text-align: center;" id="photosContent">
