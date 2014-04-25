@@ -12,6 +12,7 @@
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/res/drawable-mdpi/icon.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/res/drawable-xhdpi/icon.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www \
+/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/alertas.html \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/config.xml \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/cordova.js \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/cordova_plugins.js \
@@ -21,7 +22,7 @@
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/mapa.html \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/menu.html \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/menuAlertas.html \
+/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/MenuAlertas.html \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/plugins \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/res \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/spec \
@@ -41,7 +42,6 @@
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/backgroud.jpg \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/campana.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/cerrar_inicidencias.png \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/cerrar_inicidencias1.jpg \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/compass.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/graphic.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/location.png \
@@ -49,10 +49,10 @@
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/mapa.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/user.png \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/img/ver_alertas.png \
+/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/alertas.js \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/index.js \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/libs \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/main.js \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/menu.js \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/libs/jquery-1.7.1 \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/libs/jquery-mobile-1.0.1 \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/assets/www/js/libs/jquery-1.7.1/jquery.min.js \

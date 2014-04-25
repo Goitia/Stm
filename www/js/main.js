@@ -8,9 +8,9 @@ var previous_pos_marker = {};
 
 $(document).ready(function() {
     document.addEventListener("deviceready", onDeviceReady, false);
-    //for testing in Chrome browser uncomment
-//    onDeviceReady();
 });
+
+
 
 function onDeviceReady() {
 
@@ -237,7 +237,7 @@ function MyApplication() {
     this.compass = function() {
         compassWatchId = window.navigator.compass.watchHeading(function(heading) {
             var h = 360 - Math.round(heading.magneticHeading);
-            $("#compassInfo").html("Heading: " + Math.round(heading.magneticHeading) + "&deg;");
+            $("#compassInfo").html("Grados: " + Math.round(heading.magneticHeading) + "&deg;");
             $("#compassImg").css("-webkit-transform", "rotate(" + h + "deg)");
             $("#compassImg").css("transform", "rotate(" + h + "deg)");
         }, function(error) {
@@ -270,7 +270,7 @@ function MyApplication() {
             for (var j = 0, max = contactsWithAddress[index].addresses.length; j < max; j++) {
                 var _t = (contactsWithAddress[index].addresses[j].streetAddress || '') + " " + (contactsWithAddress[index].addresses[j].locality || '') + " " + (contactsWithAddress[index].addresses[j].postalCode || '') + " " + (contactsWithAddress[index].addresses[j].country || '');
                 contactAddresses.push(_t);
-                html += " <li data-role=\"list-divider\" role=\"heading\">" + (contactsWithAddress[index].addresses[j].type || 'other') + "</li>" +
+                html += " <li data-role=\"list-divider\" role=\"heading\">" + (contactsWithAddress[index].addresses[j].type || 'Otro') + "</li>" +
                         "<li data-theme=\"c\"><a href=\"#showAddress?i=" + j + "\" rel=\"external\" data-transition=\"slide\">" + (_t + "") + "</a></li>";
             }
             html += "</ul>";
@@ -612,10 +612,13 @@ function MapCtrl(onFail) {
                 previous_pos_marker.setMap(null); // remove previous marker
             }
         } catch (e) {
-            window.console.log("nothing to reuse");
+            window.console.log("Nada que reutilizar");
         }
     }
+    
+    
 
+    
     /**
      * Shows reader's position on map
      */
@@ -627,15 +630,16 @@ function MapCtrl(onFail) {
         self.map.setZoom(15);
 
         var info =
-                ('Latitude: ' + position.coords.latitude + '<br>' +
-                        'Longitude: ' + position.coords.longitude + '<br>' +
-                        'Altitude: ' + position.coords.altitude + '<br>' +
-                        'Accuracy: ' + position.coords.accuracy + '<br>' +
-                        'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '<br>' +
-                        'Heading: ' + position.coords.heading + '<br>' +
-                        'Speed: ' + position.coords.speed + '<br>' +
-                        'Timestamp: ' + new Date(position.timestamp));
-
+                ('Latitud: ' + position.coords.latitude + '<br>' +
+                        'Longitud: ' + position.coords.longitude + '<br>' +
+                        'Altitud: ' + position.coords.altitude + '<br>' +
+                        'Media: ' + position.coords.accuracy + '<br>' +
+                        'Altitude Media: ' + position.coords.altitudeAccuracy + '<br>' +
+                        'Grados: ' + position.coords.heading + '<br>' +
+                        'Velocidad: ' + position.coords.speed + '<br>' +
+                        'Tiempo: ' + new Date(position.timestamp));
+        
+        
         var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         if (!marker) {
             marker = new google.maps.Marker({
@@ -711,6 +715,8 @@ function MapCtrl(onFail) {
         }
     };
 
+
+    
     function getDirections(from, to, mode, callback) {
         var directionsDisplay = new google.maps.DirectionsRenderer();
         var directionsService = new google.maps.DirectionsService();
@@ -789,4 +795,18 @@ function getParmFromHash(url, parm) {
     var re = new RegExp("#.*[?&]" + parm + "=([^&]+)(&|$)");
     var match = url.match(re);
     return(match ? match[1] : "");
+}
+
+//Aqui es la parte de los formularios de alertas
+function encontradaUbicacion(position) {
+        
+    var element = document.getElementById('ubicacion');
+    element.innerHTML = 'jamon';//position.coords.latitude;
+}
+
+function getUbicacion() {     
+    navigator.geolocation.getCurrentPosition(encontradaUbicacion, Error);
+}
+function Error() {
+    alert('No se ha podido obtener la ubicacion');
 }
