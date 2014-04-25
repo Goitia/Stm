@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+
+        <!--Script JQuery-->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        
+        <script>
+            $(document).bind("mobileinit", function() {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/alertas.js"></script>
+        <script type="text/javascript" src="js/camara.js"></script>
+        
+
+
+    </head>
+    <body>
+
+
+    <!--Crear Alertas-->
+    
+    <div data-role="page" id="crear_Alertas">
+	<div data-role="header">
+            <a data-role="button" data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                Atrás
+            </a>
+	</div>
+	<div data-role="content">
+            <form name="myform">
+                <br><br><br>
+                Ubicación <input type="text" name="texto">
+                <input type="button" value="Obtener Ubicación" onclick="geolocalizacion();"><br>
+                Mensaje <textarea rows="6" cols="50">
+                </textarea>
+                Añadir una foto  <br><br>
+                <div align="center">
+                <input type="button" data-inline="true" value="Sacar una foto" onclick="capturePhoto();">
+                <input type="button" data-inline="true" value="Examinar" onclick="getPhoto(pictureSource.PHOTOLIBRARY);"><br>
+                </div>
+            </form>
+	</div>
+        <div align="center"> 
+            <img style="display:none;width:200px;height:200px;" id="imagen" src="" />  
+        </div>
+        <div align="center"> 
+            <input type="button" data-inline="true" value="Enviar alerta" onclick="">
+        </div>
+    </div>
+    </body>
+</html>
