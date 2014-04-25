@@ -60,6 +60,7 @@
 		45FAE087308140D887BF161A /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF707641840D4B3345092 /* CDVNotification.m */; };
 		1B2040B281DA49A6AB93161B /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5245CFCEF1B44D1DA71B7970 /* CDVNotification.bundle */; };
 		DB1437FEC79A4961BFF09D73 /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967E827CC63450083D558BA /* CDVCompass.m */; };
+		A13715B2ACD248A9A74A98EB /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5551CAAFD5C45DFBB2752BD /* CDVSound.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,8 @@
 		5245CFCEF1B44D1DA71B7970 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
 		7967E827CC63450083D558BA /* CDVCompass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVCompass.m"; path = "org.apache.cordova.device-orientation/CDVCompass.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		7E7C0DA786C74560A1A2B5FC /* CDVCompass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVCompass.h"; path = "org.apache.cordova.device-orientation/CDVCompass.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C5551CAAFD5C45DFBB2752BD /* CDVSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSound.m"; path = "org.apache.cordova.media/CDVSound.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A66EBA0DD7C043ADA336BC8F /* CDVSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSound.h"; path = "org.apache.cordova.media/CDVSound.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +340,8 @@
 				FFCEF8EA74394861B350BB7F /* CDVNotification.h */,
 				7967E827CC63450083D558BA /* CDVCompass.m */,
 				7E7C0DA786C74560A1A2B5FC /* CDVCompass.h */,
+				C5551CAAFD5C45DFBB2752BD /* CDVSound.m */,
+				A66EBA0DD7C043ADA336BC8F /* CDVSound.h */,
 			);
 			name = Plugins;
 			path = "STMapp/Plugins";
@@ -527,6 +532,7 @@
 				4D4EB1DE9A7E4F319E1F7562 /* CDVAccelerometer.m in Sources */,
 				45FAE087308140D887BF161A /* CDVNotification.m in Sources */,
 				DB1437FEC79A4961BFF09D73 /* CDVCompass.m in Sources */,
+				A13715B2ACD248A9A74A98EB /* CDVSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
