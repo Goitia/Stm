@@ -478,7 +478,7 @@ module.exports.metadata =
     "org.apache.cordova.device-motion": "0.2.6",
     "org.apache.cordova.dialogs": "0.2.6",
     "org.apache.cordova.device-orientation": "0.3.5",
-    "org.apache.cordova.media": "0.2.10",
+    "org.apache.cordova.media": "0.2.11-dev",
     "org.apache.cordova.file": "1.0.1"
 }
 // BOTTOM OF METADATA

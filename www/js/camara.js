@@ -53,6 +53,7 @@
     // Función que se ejecuta cuando se pulsa el botón "Capturar foto"
     function capturePhoto() 
     {
+        alert('quiero sacar foto');
       // Mostramos la cámara del móvil y obtenemos la imagen 
       // capturada codificada en base64
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, 

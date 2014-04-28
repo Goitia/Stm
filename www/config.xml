@@ -1,10 +1,10 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.coolappz.CordovaMapsSample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.coolappz.CordovaMapsSample" version="1.0.0">
     <name>STM App</name>
     <description>Cordova Application</description>
     <author email="goitia_20@hotmail.com" href="http://www.stm.com">Goitia</author>
-    <access origin="*" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <content src="index.html" />
+    <access origin="*"/>
+    <preference name="fullscreen" value="true"/>
+    <preference name="webviewbounce" value="true"/>
+    <content src="index.html"/>
 </widget>

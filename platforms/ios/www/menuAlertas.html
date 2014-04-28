@@ -6,33 +6,77 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>STM</title>
+        <title>Menu alertas</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
         
-        <!--Css-->
-        <link rel="stylesheet" href="css/menuAlertas.css">
-   
+        
+        <link rel="stylesheet" href="css/menuAlertas.css" />
+
         <!--Script JQuery-->
-        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        
+        <script>
+            $(document).bind("mobileinit", function() {
+                $.mobile.defaultPageTransition = 'none';
+                $.mobile.defaultDialogTransition = 'none';
+                $.mobile.useFastClick = true;
+            });
+        </script>
+        
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
     </head>
-    
     <body>
-        <div data-role="page" id="home" data-theme="a">
-	<div data-role="content" id="contenido">	
-              <div class="ui-grid-a" id="grid">
-                <div class="ui-block-a">
-                    <a href="#Crear_Alertas" data-role="button" data-inline="false" id="Crear_alertas"></a><p id="text">Crear Alertas</p>
-                    <a href="#estadisticas" data-role="button" data-inline="false" id="estadisticas_btn"></a><p id="text">Estadisticas</p>
-                </div>
-                <div class="ui-block-b">
-                    <a href="mapa.html" data-role="button" data-inline="false" data-ajax="false" id="mapa_btn"></a><p id="text">Mapa</p>
-                    <a href="#ajustes" data-role="button" data-inline="false" id="ajustes_btn"></a><p id="text">Ajustes</p>
+        <div data-role="page" id="alertas">
+            <div data-role="header">
+                
+                <a data-role="button" data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Atrás
+                </a>
+            </div>
+            <div data-role="content" id="contenido">	
+                <div class="ui-grid-a" id="grid">
+                    <div class="ui-block-a">
+                        <a href="crearAlertas.html" data-role="button" data-inline="false" data-ajax="false" id="Crear_alertas"></a><p id="text">Crear Alertas</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#ver_Alertas" data-role="button" data-inline="false" data-ajax="false" id="Ver_Alertas"></a><p id="text">Ver_Alertas</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#cerrar_Alertas" data-role="button" data-inline="false" data-ajax="false" id="Cerrar_Alertas"></a><p id="text">Cerrar Alertas</p> 
+                    </div>
                 </div>
             </div>
-	</div>
+            <div data-role="footer">
+		
+            </div>
+        </div>
+        <!--Crear Alertas-->
+    
+        <div data-role="page" id="crear_Alertas">
+            <div data-role="header">
+                <a data-role="button" data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Atrás
+                </a>
+            </div>
+            <div data-role="content">
+                <br><br><br>
+                
+                    Ubicación <input type="text" name="firstname">
+                    <input type="button" value="Obtener Ubicación" onclick="geolocation();"><br>
+                    Mensaje <textarea rows="5" cols="50">
+                    </textarea>
+                    <p id="geolocation"></p>
+
+            </div>
+            <div data-role="footer">
+                    <h4>Pie de página</h4>
+            </div>
         </div>
     </body>
 </html>
