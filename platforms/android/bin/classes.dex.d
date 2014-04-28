@@ -103,12 +103,6 @@
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/globalization/Globalization$1.class \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/globalization/Globalization.class \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/globalization/GlobalizationError.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/AudioHandler.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$1.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$MODE.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$STATE.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer.class \
-/Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/media/FileHelper.class \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/mediacapture/Capture$1.class \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/mediacapture/Capture$2.class \
 /Users/Goitia/NetBeansProjects/STMv1.1/platforms/android/bin/classes/org/apache/cordova/mediacapture/Capture$3.class \

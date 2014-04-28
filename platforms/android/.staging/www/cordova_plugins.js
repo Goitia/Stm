@@ -451,7 +451,7 @@ module.exports.metadata =
     "org.apache.cordova.network-information": "0.2.7",
     "org.apache.cordova.splashscreen": "0.2.7",
     "org.apache.cordova.vibration": "0.3.7",
-    "org.apache.cordova.media": "0.2.10"
+    "org.apache.cordova.media": "0.2.11-dev"
 }
 // BOTTOM OF METADATA
 });

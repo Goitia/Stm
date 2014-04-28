@@ -30,12 +30,12 @@ and open the template in the editor.
 }
 #Cerrar_Alertas{
 	float:right;
-	margin-right: 20px;
+	margin-right: 10px;
 	width:85px;
 	text-align:center;
 	height:85px;
 	line-height: 50px;
-	background-image:url(../img/cerrar_inicidencias.jpg); 
+	background-image:url(../img/cerrar_inicidencias.png); 
 	background-size: 80px 80px;
 	background-position:center;
 	background-repeat: no-repeat; 
